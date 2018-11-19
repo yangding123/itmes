@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/css/conpont/list.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/list.js"></script>
+</head>
+<body>
+	
+	<header></header>
+	<div class="product_in">
+		<div id="proLists"></div>
+			<script type="text/html" id="pro-tem">
+			{{each yangding item i}}
+			
+					<div id="pic">
+						<img src="{{item.img1}}"/>
+						<img src="{{ item.img }}" />
+						<img src="{{ item.img2 }}" />
+
+						<div id="len"></div>
+						
+					</div>
+					<div>
+					<P id="tab-bouttom">
+							<img src="{{ item.img1 }}" class="ac" />
+							<img src="{{ item.img }}" />
+						     <img src="{{ item.img2 }}"class="imgs" />
+						</P>
+</div>
+					<div id="fangda"><img src="{{item.img1}}" id="img2"/>
+					
+					</div>
+					<div class="rights">
+						<p class="ids">{{item.id }}</p>
+						<p class="name">{{item.name }}</p>
+						<div class="desc"><p>{{item.desc }}</p></div>
+						<div class="spefc_fuck">
+						<div class="spefc_wrap">
+							<div class="clearfixs">
+								<div class="titles">规格:</div>
+							</div>
+							<div class="sects">
+								<span class="spec">1.2磅</span>
+								<span id="dier">2.2磅</span>
+								<span id="disan">3.2磅</span>
+								<span id="disi">5.2磅</span>
+							</div>
+						</div>
+						<div class="jiage">
+							<div class="kuan">款项：</div>
+						{{each item.price m n }}
+						<!--<div class="piao">-->
+						<p class="price">{{ m.prices }}</p>
+						{{/each}}
+						<!--</div>-->
+						</div>
+					</div>
+					<ul class="tips_cle">
+						<li><p  id="guids">14CM*14CM*4.5CM≈6寸，约510g</p>
+							<p style="display: none;" id="guid">17.5CM*17.5CM*4.5CM≈8寸，约950g</p>
+							<p style="display: none;" id="guidss">23CM*23CM*4.5CM≈12寸，约1.4kg</p>
+							<p style="display: none;" id="guidsss">30CM*30CM*4.5CM≈14寸，约2.3kg</p>
+							
+						</li>
+						<li>
+							<p id="canju">免费赠送5份餐具</p>
+							<p style="display: none;" id="canjus">免费赠送10份餐具
+								
+						
+							
+						</p>
+							<p style="display: none;" id="canjuss">免费赠送15份餐具 </p>
+							<p style="display: none;" id="canjusss">免费赠送20份餐具</p>
+						</li>
+						<li>
+							<p  id="qie">蛋糕可切分9块</p>
+							<p style="display: none;" id="qies">蛋糕可切分16块</p>
+							<p style="display: none;" id="qiess">蛋糕可切分25块</p>
+							<p style="display: none;" id="qiesss">蛋糕可切分49块</p>
+						</li>
+						<li>
+							<p id="tiqian">至少提前1天预定</p>
+							
+							<p style="display: none;" id="tiqians">至少提前3天预定</p>
+						</li>
+					</ul>
+					<div class="amouts">
+						<div class="shuliang">数量:</div>
+						<div class="countent">
+							<a href="javascript:;" class="btnd"></a>
+							<div class="wrep"><input type="text" class="int" value="1"></div>
+							<a href="javascript:;" class="btnds"></a>
+						</div>
+					</div>
+					<div class="oper">
+						<a href="/html/component/gouwuche.html" class="fangru" id="gouwu">放入购物篮</a>
+						<a href="javascript:;" class="liji">立即购买</a>
+					</div>
+					</div>
+					
+					
+
+				
+			{{/each}}
+
+			</script>
+			<!--<div class="intro">
+				<p class="title_clear"></p>
+			</div>-->
+		
+	</div>
+	
+	
+
+
+<footer></footer>
+</body>
+</html>

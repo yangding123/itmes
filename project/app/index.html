@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="/css/conpont/zhujiemian.css">
+		<script src="/libs/require/require.js"data-main = "/js/index.js"></script>
+	</head>
+	<body>
+		<!--//头部-->
+		<header></header>
+		<!--主页-->
+		<!--<div class="banner">
+		 <div class="banners"></div>
+	</div>-->
+	<div id="div1">
+	<ul>
+    	<li><img src="images/lun1.png" /></li>
+    	<li><img src="images/banner.jpg" /></li>
+    	<li><img src="images/lun2.png" /></li>
+    	<li><img src="images/lun3.jpg" /></li>
+    	
+    </ul>
+    <ol>
+    </ol>
+    <a href="javascript:;" id="goPrev">&laquo;</a>
+    <a href="javascript:;" id="goNext">&raquo;</a>
+</div>
+	
+	
+	<div class="sections">
+		<div class="clearfix">
+			<a href="#" class="entry"></a>
+			<a href="#" class="er"></a>
+			<a href="#" class="san"></a>
+			<a href="#" class="si"></a>
+			<a href="#" class="wu"></a>
+		</div>
+	</div>
+	<!--商品列表-->
+	<div class="floor">
+    <div class="best_chiose">
+	  <div class="best_title">
+	  	<p class="cn">当即热卖</p>
+	  	<p class="en">BEST CHOICE</p>
+	  </div>
+	  <ul id="proList" class="pros"></ul>
+			<script type="text/html" id="pro-template">
+			{{each yangding item i}}
+				<li style="width: 282px;height:325px;float: left;overflow:hidden;margin:0 12px 10px 0; box-sizing: border-box;">
+					<div class="pic"><a href="/html/component/list.html"><img src="{{ item.img }}" alt=""></a></div>
+					<p class="price">{{ item.price }}</p>
+					<p class="name">{{ item.name }}</p>
+					<p class="id">{{ item.id }}</p>
+					<div class="operits">
+						<a href="/html/component/gouwuche.html" class="join">加入购物车</a>
+					</div>
+					<p class="imagss"></p>
+					
+
+				</li>
+			{{/each}}
+
+			</script>
+        </div>
+        </div>
+        <div class="ads_container">
+        	<a href="#"><img src="images/r1.jpg"</a>
+        	<a href="#"><img src="images/r2.jpg"</a>
+        	<a href="#"><img src="images/r3.jpg"</a>
+        	
+        	
+        </div>
+       <ul id="nav">
+		<li>商品列表</li>
+		<li>尾部</li>
+		<li>顶部</li>
+		
+	</ul>
+		
+		<!--尾部-->
+		<div class="floor">
+		<footer></footer>
+		</div>
+		
+	</body>
+</html>

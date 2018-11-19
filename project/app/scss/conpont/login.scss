@@ -1,0 +1,138 @@
+ @import "head_footer.scss";
+ *{margin: 0;
+  padding: 0;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+a{
+     text-decoration: none;
+}
+ .container{
+     width: 100%;
+     height: 768px;
+}
+.page_container{
+    width: 1200px;
+    height: 768px;
+       
+    padding: 80px 0 160px;
+    margin: 0 auto;
+}
+.login_logo{
+    display: block;
+       float: left;
+    width: 572px;
+    height: 348px;
+    background-image: url(/images/login-slogan.png) ;
+     background-repeat: no-repeat;
+    margin: 86px 0 0 48px;
+}
+.login_modeo{
+     position: relative;
+    float: left;
+    width: 579px;
+    height: 520px;
+    border-left: 1px solid #c8c8c8;
+}
+.modeo_number{
+    width: 392px;
+    height: 472px;
+    padding: 54px 0 0 98px;
+}
+.login_title{
+        font-size: 40px;
+    line-height: 32px;
+    color: #d6dce2;
+    text-align: center;
+}
+.login_modeo ul li input{
+  width: 390px;
+    height: 50px;
+    background-color: #fafafa;
+    border: 1px solid #929eab;
+    border-radius: 4px;
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #505050;
+    text-indent: 1em;
+    outline: none;
+}
+.other_options{
+     height: 44px;
+    margin-left: 10px;
+}
+
+.forget_pwd{
+        float: right;
+    margin-right: 10px;
+    text-align: right;
+    color: #1478be;
+   
+     display: inline-block;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+}
+.btn_logo{
+      
+    width: 390px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #45515e;
+    border-radius: 4px;
+//  margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 52px;
+    color: #fff;
+    background-color: #45515f;
+    text-align: center;
+    cursor: pointer;
+}
+.modeo_change{
+    color: #505050;
+        height: 30px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 30px;
+ 
+}
+.modeo_change>a{
+     color: #1478be;
+}
+.tip_phone{
+    display: block;
+    position: absolute;
+    top: -26px;
+    right: 14px;
+    width: 186px;
+    height: 76px;
+}
+
+.tip_phone span{
+       float: left;
+    display: inline-block;
+    width: 179px;
+    height: 30px;
+}
+.tip_phone a{
+    float: right; 
+     width: 76px;
+    height: 76px;
+    margin-left: 5px;
+    margin-top: -44px;
+}
+#rer_tip{
+        height: 30px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #e9546b;
+  display: none;
+}
+ 
+      
